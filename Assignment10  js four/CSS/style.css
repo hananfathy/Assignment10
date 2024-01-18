@@ -1,0 +1,117 @@
+:root {
+    --color-text: #17A2B8;
+    --color-error-text: rgb(220, 53, 69);
+    --color-correct-text: rgb(220, 53, 69);
+    --color-btn-logout: #07ff07;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--color-text);
+    background-color: #24353F;
+    height: 100vh;
+}
+
+#login,
+#signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.home-nav {
+    background-color: #24353F;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+#home {
+    height: 87vh;
+}
+
+.w-80 {
+    width: 86%;
+}
+
+.login-popup {
+    background-color: #24353F;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 66%;
+}
+
+.home-popup {
+    background-color: #24353F;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    width: 66%;
+}
+
+.login-popup h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.login-popup input {
+    background-color: transparent;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.login-popup input::placeholder {
+    color: rgb(175, 179, 183);
+    border-color: #fff;
+}
+
+.form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0rem #86b7fe;
+}
+
+.content .login-btn {
+    color: var(--color-text);
+    border-color: var(--color-text);
+}
+
+.content .btn:focus-visible,
+.content .btn:hover,
+.content .btn:active,
+.content .btn:focus,
+:not(.content .btn-check)+.content .btn:active {
+    color: #fff;
+    background-color: var(--color-text);
+    border-color: var(--color-text);
+    outline: 0;
+    box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+.home-nav .logout-btn {
+    color: #6c757d;
+    border-color: var(--color-btn-logout);
+}
+
+.home-nav .btn:focus-visible,
+.home-nav .btn:hover,
+.home-nav .btn:active,
+.home-nav .btn:focus,
+:not(.home-nav .btn-check)+.home-nav .btn:active {
+    color: #fff;
+    background-color: var(--color-btn-logout);
+    border-color: var(--color-btn-logout);
+    outline: 0;
+    box-shadow: var(--bs-btn-focus-box-shadow);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.singup-acher:focus-visible,
+.singup-acher:hover,
+.singup-acher:active,
+.singup-acher:focus,
+:not(.singup-acher-check)+.singup-acher:active {
+    text-decoration: underline;
+}
